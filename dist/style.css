@@ -1,48 +1,129 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  width: 100%;
-  height: 100%; }
+  line-height: 1; }
 
-h1 {
-  font-size: 5px; }
+ol, ul {
+  list-style: none; }
 
-.asos-container {
-  width: 980px;
-  height: 100%;
-  background: blue;
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer; }
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both; }
+
+.container {
+  max-width: 980px;
   margin: 0 auto; }
-  .asos-container__mens-button {
-    width: 48%;
-    float: right;
-    background-color: red;
-    padding: 12px;
-    margin: 0 auto;
-    position: relative; }
-    .asos-container__mens-button::after {
-      content: '';
-      width: 0;
-      height: 0;
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
-      border-top: 20px solid red;
-      position: absolute;
-      top: 125%;
-      left: 50%;
-      transform: translate3d(-50%, -50%, 0); }
-  .asos-container__womens-button {
-    width: 48%;
-    float: right;
-    background-color: yellow;
-    padding: 12px;
-    margin: 0 auto;
-    position: relative; }
-    .asos-container__womens-button::after {
-      content: '';
-      width: 0;
-      height: 0;
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
-      border-top: 20px solid yellow;
-      position: absolute;
-      top: 125%;
-      left: 50%;
-      transform: translate3d(-50%, -50%, 0); }
+  .container .asos-container {
+    width: 980px;
+    height: 100%;
+    background: blue; }
+    .container .asos-container__button {
+      width: 50%;
+      float: right;
+      background-color: red;
+      padding: 12px;
+      position: relative; }
+      .container .asos-container__button::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid red;
+        position: absolute;
+        top: 125%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0); }
+    .container .asos-container__button {
+      width: 50%;
+      float: right;
+      background-color: yellow;
+      padding: 12px;
+      position: relative; }
+      .container .asos-container__button::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid yellow;
+        position: absolute;
+        top: 125%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0); }
+  .container .main-container {
+    height: 40px; }
+    .container .main-container__description {
+      width: 50%;
+      float: left;
+      background: navy;
+      height: 400px; }
+    .container .main-container__image {
+      width: 50%;
+      float: right;
+      background: yellow;
+      height: 400px; }
+  .container .main-container-three__image-1 {
+    width: 33.3%;
+    background: red;
+    float: left;
+    height: 200px; }
+  .container .main-container-three__image-2 {
+    width: 33.3%;
+    background: green;
+    float: left;
+    height: 200px; }
+  .container .main-container-three__description {
+    width: 33.4%;
+    background: cyan;
+    float: left;
+    height: 200px; }
+    .container .main-container-three__description .content-container {
+      width: 80%;
+      margin: 0 auto; }
+      .container .main-container-three__description .content-container h3 {
+        text-transform: uppercase;
+        font: 30px;
+        text-align: center;
+        padding: 15px; }
+      .container .main-container-three__description .content-container .cta {
+        width: 40%;
+        margin: 0 auto;
+        display: block; }
